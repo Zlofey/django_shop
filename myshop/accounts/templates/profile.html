@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+  Здравствуйте, {{ user.username }}!
+
+<p> Логин: {{ user.username }}</p>
+<p> Имя: {{ user.first_name }}</p>
+<p> Фамилия: {{ user.last_name }}</p>
+<p> Адрес электронной почты: {{ user.email }}</p>
+<p> Адрес: {{ user.profile.address }}</p>
+<p> Почтовый индекс: {{ user.profile.postal_code }}</p>
+<p> Город: {{ user.profile.city }}</p>
+<p> Дата последнего входа: {{ user.last_login }}</p>
+<p> Дата регистрации: {{ user.date_joined }}</p>
+
+<a href="{% url 'accounts:profile_change' %}">
+    Редактирование профиля
+</a>
+{% endblock %}
+
+
+

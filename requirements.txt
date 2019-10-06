@@ -1,0 +1,7 @@
+django
+Pillow
+flower
+django-paypal
+WeasyPrint
+django-autocomplete-light-bsc
+celery
